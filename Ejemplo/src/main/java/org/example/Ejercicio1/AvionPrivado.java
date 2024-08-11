@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Ejercicio1;
 
 public class AvionPrivado extends Avion {
     public AvionPrivado(int capacidadCombustible, int consumoCombustible) {
@@ -6,8 +6,6 @@ public class AvionPrivado extends Avion {
     }
 
     public int volar(int distancia) {
-        int combustibleNecesario = (distancia * consumoCombustible) + (getCapacidadCombustible() / 2);
-
-        return combustibleNecesario;
+        return (distancia * consumoCombustible) + (getCapacidadCombustible() / 2);
     }
 }
